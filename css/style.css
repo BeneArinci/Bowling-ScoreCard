@@ -3,6 +3,14 @@
   flex-wrap: wrap;
 }
 
+h1 {
+  font-family: 'Fira Code', monospace;
+}
+
+.frame-number {
+  font-family: 'Dancing Script', cursive;
+}
+
 .frame {
   display: flex;
   border: 2px solid black;
@@ -57,6 +65,13 @@
   width: 80px;
   text-align: center;
   font-size: large;
+}
+
+#label1, #label2, #label3 {
+  font-family: 'Dancing Script', cursive;
+  font-size: x-large;
+  margin-left: 30px;
+  margin-right: 10px;
 }
 
 .hidden {
