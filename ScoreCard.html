@@ -97,8 +97,9 @@
         <div class="frame-number">Score</div>
         <div class="total"></div>
       </div>
+      <span class = "errormessage"></span>
     </div>
-
+  
   <div class='add-frame d-flex justify-content-center my-5' id='enter-frame'>
     <label for="first-roll" id = 'label1'>First roll</label>
     <select name="first-roll" id="ball-1">
@@ -150,13 +151,14 @@
     <button class = "btn btn-outline-primary" id = 'submit-bonus'>Add Bonus</button>
   </div>
     <!-- <input class = "hidden" id = "ball-3" type='number' placeholder="bonus bowl goes here"><br> -->
-    
-   
-  
   <div class = "d-flex justify-content-center">
     <button class = "btn btn-outline-danger" id = "reset">Reset Scorecard</button>
   </div>
-  <span class = "errormessage"></span>
+
+  <div class = "image d-flex justify-content-center">
+    <img src="public/bowling.png">
+  </div>
+  
 
   <script src="./src/frame.js"></script>
   <script src="./src/finalFrame.js"></script>
