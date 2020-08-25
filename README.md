@@ -9,24 +9,16 @@ I began from the back-end and I created a client-side app. I haven't started wor
 
 
 #### PROJECT SETUP
-I used **Jasmine** as a testing framework and **ESLint** as a code linter.
 
-To install Jasmine:
-- download the latest version of Jasmine Stand Alone from: https://github.com/jasmine/jasmine/releases 
-- unzip the file and copy the content inside the working directory
-- modify the SpecRunner.html file and the files inside the src and spec folders accordingly
-To install ESLint for VSC:
-- download the extension and follow the indicated procedure
+Use "git clone" command to download this repo in your machine.
 
-To make sure that ESLint is collaborating with Jasmine spec files, in the ESlint.json file make sure you indicate the following:
-```
-    "env": {
-        "browser": true,
-        "es2020": true,
-        "jasmine": true
-    },
-```
 To run tests and use the program in the browser console type in the command line:
 ```
 open SpecRunner.html
 ```
+
+To use the web app type in the command line:
+```
+open ScoreCard.html
+```
+
