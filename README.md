@@ -1,10 +1,12 @@
 
 ## My Bowling Scorecard
 
-This is a project I worked on as a weekend challenge during my experience at Makers.
-The idea is to create a Bowling Scorecard that can be used both from the browser console or in a visual way as a single web page app.
-In the beginning I only worked on the back-end part in **JavaScript** and, only when it was tested and working in the console, I developed the front-end side using **HTML**, **JQuery**, **CSS** and **Bootstrap**.
-Most challenging part: understanding the Bowling rules and planning how to tell JavaScript how to put them in practice!
+This is a project I worked on as a weekend challenge during my experience at Makers.<br>
+The idea was to create a Bowling Scorecard allowing the user to keep track of their score throughout a match. This web app is designed to be very intuitive and easy to use.<br>
+When I started working on this project I spent a relevant amount of time planning. I did not know the bowling score calculation rules and, once I understood them, I had to find a way to gently ask JavaScript to help me out :smile:. <br>
+I began from the back-end and I created a client-side app. I haven't started working on the front-end until my app was perfectly working on the console. <br>
+***Tech stack*** | JavaScript | Jasmine | JQuery | HTML | CSS | Bootstrap
+
 
 #### PROJECT SETUP
 I used **Jasmine** as a testing framework and **ESLint** as a code linter.
@@ -24,7 +26,7 @@ To make sure that ESLint is collaborating with Jasmine spec files, in the ESlint
         "jasmine": true
     },
 ```
-To run tests type in the command line:
+To run tests and use the program in the browser console type in the command line:
 ```
 open SpecRunner.html
 ```
