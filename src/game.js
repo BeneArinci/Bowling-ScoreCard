@@ -28,7 +28,7 @@ class Game {
   }
 
   getFramesScores() {
-    var frames_scores = []
+    const frames_scores = []
     this.frames.forEach(function(frame){
       frames_scores.push(frame.totalFrameScore());
     });
@@ -40,7 +40,7 @@ class Game {
   }
 
   finalScore() {
-    var finalScore = this.framesScores().reduce(function(a, b){
+    const finalScore = this.framesScores().reduce(function(a, b){
     return a + b;
     }, 0);
     return finalScore

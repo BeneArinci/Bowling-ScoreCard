@@ -2,8 +2,6 @@ $(document).ready(function() {
   const game = new Game()
   const finalframe = new FinalFrame()
   const MAX_SINGLE_ROLL_PTS = 10
-  console.log(game)
-
 
   
   $('#submit').click(function(){
@@ -22,8 +20,6 @@ $(document).ready(function() {
       game.currentFrame --
     }
    
-
-    console.log(game)
   });
 
   $('#submit-bonus').click(function(){
@@ -32,7 +28,6 @@ $(document).ready(function() {
     $(`#${game.currentFrame}.bonus-bowl`).text(bonusBall)
     updateScore()
     _removeInputArea()
-    console.log(finalframe)
   })
 
   $('#reset').click(function(){
@@ -77,14 +72,12 @@ $(document).ready(function() {
 
   function _checkFrameValidity(firstBall, secondBall) {
     if (_isFrameInvalid(firstBall, secondBall)) {
-      console.log("frame invalid")
       $('.errormessage').text('invalid amount of points for single frame (max is 10)')
     }
     else {$('.errormessage').empty()};
   };
 
   function _isFrameInvalid(firstBall, secondBall) {
-    console.log(firstBall)
     return (firstBall + secondBall > MAX_SINGLE_ROLL_PTS);
   }
 
