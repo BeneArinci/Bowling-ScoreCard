@@ -3,7 +3,8 @@ $(document).ready(function() {
   const finalframe = new FinalFrame()
   const MAX_SINGLE_ROLL_PTS = 10
 
-  
+  _clearInputs()
+
   $('#submit').click(function(){
     const firstBall = parseInt($('#ball-1').val())
     const secondBall = parseInt($('#ball-2').val())
@@ -19,7 +20,7 @@ $(document).ready(function() {
       _addBonusForm()
       game.currentFrame --
     }
-   
+    _clearInputs()
   });
 
   $('#submit-bonus').click(function(){
@@ -79,6 +80,12 @@ $(document).ready(function() {
 
   function _isFrameInvalid(firstBall, secondBall) {
     return (firstBall + secondBall > MAX_SINGLE_ROLL_PTS);
+  }
+
+
+  function _clearInputs() {
+    $('#ball-1').val('')
+    $('#ball-2').val('')
   }
 
 });
